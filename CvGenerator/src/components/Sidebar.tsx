@@ -1,7 +1,8 @@
 import Image from "./Image.tsx";
 import profile from "../assets/profile.jpg";
 import Bloc from "./Bloc.tsx";
-import {faLocationDot} from "@fortawesome/free-solid-svg-icons";
+import {faCar, faEnvelope, faLocationDot, faPhone} from "@fortawesome/free-solid-svg-icons";
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 export default function Sidebar()
 
@@ -17,8 +18,11 @@ export default function Sidebar()
                         <span className="text-2xl  text-white">Kichenassamy</span>
                     </h2>
                     <Bloc title={"PROFIL"}
-                          description={["île-de-france","noahkiche@gmail.com", "06 52 75 93 25", "noasman971", "Noah Kichenassamy", "Permis B"]} icon={faLocationDot} />
-                    <Bloc title={"COMPETENCES"} skills frontend={["React", "Next", "Typescript"]} backend={["Php", "Laravel"]} />
+                          description={["île-de-france","noahkiche@gmail.com", "06 52 75 93 25", "noasman971", "Noah Kichenassamy", "Permis B"]}
+                          icon={[faLocationDot, faEnvelope, faPhone, faGithub, faLinkedin, faCar]}
+                          link={[null, null, null,"https://github.com/noasman971", "https://www.linkedin.com/in/noah-kichenassamy/"]}
+                    />
+                    <Bloc title={"COMPETENCES"} skills frontend={["React", "Next", "Typescript"]} backend={["Php", "Laravel", "Symfony", "NextJS"]} />
                     <Bloc title={"SOFT SKILLS"} description={["Curieux", "Esprit d'équipe", "Méthodologie agile"]}/>
                     <Bloc title={"CENTRES D'INTERET"} description={["Lecture: Manga", "Sport: Basket", "Voyager"]}/>
                     <Bloc title={"Langues"} description={["Anglais: B2 intermédiaire", "Espagnol: B1 Scolaire", "Japonais: B1 Scolaire"]}/>

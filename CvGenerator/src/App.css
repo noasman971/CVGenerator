@@ -14,6 +14,10 @@
 .bigTitle{
     color: #EFDAA7;
 }
-.border-bigTitle{
-    border-color: #EFDAA7;
+.bg-bigTitle{
+    background: #EFDAA7;
+}
+
+.disc-description{
+    list-style-type: disc;
 }
