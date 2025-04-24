@@ -8,7 +8,7 @@ interface blocProps {
     frontend?: string[];
     backend?: string[];
     icon?: IconDefinition[];
-    link?: string[];
+    link?: (string | null)[];
 }
 
 export default function bloc({title, description, skills = false, frontend, backend, icon, link}: blocProps)

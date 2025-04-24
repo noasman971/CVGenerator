@@ -1,5 +1,4 @@
 import {useState} from "react";
-import Sidebar from "./Sidebar.tsx";
 
 interface Props {
     title: string;
@@ -16,16 +15,30 @@ function Checkbox({ title, onChange }: Props) {
 
     return (
         <div>
-            <input type="checkbox" onClick={handleChange} checked={checked} id={title} name={title} />
-            <label className={"mx-2"} htmlFor={title}>{title}</label>
+            <input
+                type="checkbox"
+                onClick={handleChange}
+                checked={checked}
+                id={title}
+                name={title}
+            />
+            <label className="mx-2" htmlFor={title}>
+                {title}
+            </label>
         </div>
     );
 }
 
-export default function UpdatePage() {
+interface UpdatePageProps {
+    title: string;
+    setTitle: (title: string) => void;
+    frontend: string[];
+    backend: string[];
+    setFrontend: (langs: string[]) => void;
+    setBackend: (langs: string[]) => void;
+}
 
-    const [frontend, setFrontend] = useState<string[]>([]);
-    const [backend, setBackend] = useState<string[]>([]);
+export default function UpdatePage({ setTitle, frontend, backend, setFrontend, setBackend }: UpdatePageProps) {
 
     const handleCheckboxChange = (type: "frontend" | "backend", title: string, checked: boolean) => {
         const update = type === "frontend" ? frontend : backend;
@@ -38,15 +51,21 @@ export default function UpdatePage() {
         }
     };
 
-    const frontEndLangs = [
-        "Javascript", "VueJs", "React", "Angular", "Svelte", "TypeScript"
+    const handleTitleChange = (title: string) => {
+        setTitle(title);
+    };
+
+    const frontEndLangs = ["Javascript", "VueJs", "React", "Angular", "Svelte", "TypeScript"];
+    const backEndLangs = ["PHP", "Python", "Java", "Ruby", "JavaScript", "Laravel", "Node.js", "Django", "Spring", "Express", "Flask", "Ruby-on-Rails", "ASP.NET"];
+    const titleJob = [
+        "Développeur Front-end", "Développeur Back-end", "Développeur Fullstack",
+        "Développeur Web", "Développeur Mobile", "Développeur d'Applications",
+        "Développeur de Logiciels", "Développeur Java", "Développeur Python",
+        "Développeur PHP", "Développeur informatiques", "Développeur Javascript",
+        "Développeur C#", "Développeur Unity"
     ];
 
-    const backEndLangs = [
-        "PHP", "Python", "Java", "Ruby", "JavaScript", "Laravel",
-        "Node.js", "Django", "Spring", "Express", "Flask",
-        "Ruby-on-Rails", "ASP.NET"
-    ];
+
 
 
     return (
@@ -65,7 +84,12 @@ export default function UpdatePage() {
                 ))}
             </fieldset>
 
-            <Sidebar frontend={frontend} backend={backend} />
+            <fieldset className={"grid grid-cols-3 mt-6"}>
+                <legend>Choose a title:</legend>
+                {titleJob.map((jobTitle) => (
+                    <Checkbox key={jobTitle} title={jobTitle} onChange={() => handleTitleChange(jobTitle)} />
+                ))}
+            </fieldset>
         </div>
     );
 }
