@@ -97,7 +97,8 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
             languages={"Laravel, Tailwind, MySQL"}
             date={"24 mars 2025 – 4 avril 2025"}
             description={[
-                "Développement seul d’une plateforme de gestion scolaire pour la Coding Factory.",
+                "Projet réalisé seul.",
+                "Développement d’une plateforme de gestion scolaire pour la Coding Factory.",
                 "Gestion des tâches de vie commune, création de bilans de compétences via IA connectée à une API."
             ]}
         />,
@@ -106,7 +107,8 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
             languages={"Symfony, Tailwind, MySQL"}
             date={"28 février 2025 – 4 mars 2025"}
             description={[
-                "Développement seul d’une application avec système d’authentification.",
+                "Projet réalisé seul.",
+                "Développement d’une application avec système d’authentification.",
                 "Gestion des utilisateurs et importation de données via fichiers CSV."
             ]}
         />,
@@ -115,8 +117,9 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
             languages={"Laravel, Bootstrap, MySQL"}
             date={"17 février 2025 – 21 février 2025"}
             description={[
-                "Projet en équipe de 3 avec méthodologie agile.",
-                "Système de réservation pour un kinésithérapeute avec gestion des utilisateurs, des créneaux horaires, validation des formulaires et envoi d’e-mails."
+                "Projet réalisé en équipe de 3 avec méthodologie agile.",
+                "Développement d’un système de réservation pour un kinésithérapeute.",
+                "Gestion des utilisateurs, des créneaux horaires, validation des formulaires et envoi d’e-mails."
             ]}
         />,
         <Bloc2Content
@@ -124,7 +127,8 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
             languages={"React (TypeScript), Tailwind CSS, Next.js, PostgreSQL"}
             date={"31 mars 2025 – aujourd’hui"}
             description={[
-                "Développement seul d’une application de streaming musical inspirée de Spotify.",
+                "Projet réalisé seul.",
+                "Développement d’une application de streaming musical inspirée de Spotify.",
                 "Fonctionnalités : gestion des playlists, lecture de musique."
             ]}
         />,
@@ -133,8 +137,8 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
             languages={"Java"}
             date={"20 janvier 2025 – 24 janvier 2025"}
             description={[
-                "Projet en équipe de 4 avec méthodologie agile.",
-                "Jeu de stratégie en console où les joueurs déplacent leur pion et détruisent des cases.",
+                "Projet réalisé en équipe de 4 avec méthodologie agile.",
+                "Développement d’un jeu de stratégie en console où les joueurs déplacent leur pion et détruisent des cases.",
                 "Système de scores et règles spécifiques."
             ]}
         />,
@@ -143,7 +147,7 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
             languages={"Java"}
             date={"27 janvier 2025 – 31 janvier 2025"}
             description={[
-                "Projet en équipe de 4 avec méthodologie agile.",
+                "Projet réalisé en équipe de 4 avec méthodologie agile.",
                 "Application console de gestion de stock : produits, commandes, utilisateurs, historique des transactions."
             ]}
         />,
@@ -152,7 +156,7 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
             languages={"Python"}
             date={"16 décembre 2024 – 20 décembre 2024"}
             description={[
-                "Projet en équipe de 4 avec méthodologie agile.",
+                "Projet réalisé en équipe de 4 avec méthodologie agile.",
                 "Création d’un jeu interactif de démineur en terminal."
             ]}
         />
@@ -160,8 +164,9 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
 
 
 
+
     return (
-        <div className={"p-4 sm:ml-64 w-[calc(100%-256px)] h-screen"}>
+        <div className={"p-4 sm:ml-64 w-[calc(100%-256px)] h-screen my-100"}>
             <fieldset className={"grid grid-cols-3 gap-2.5"}>
                 <legend>Choose Front-end:</legend>
                 {frontEndLangs.map((lang) => (

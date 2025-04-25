@@ -30,7 +30,7 @@ export default function Sidebar({ frontend, backend }: SidebarProps)
                           icon={[faLocationDot, faEnvelope, faPhone, faGithub, faLinkedin, faCar]}
                           link={[null, null, null,"https://github.com/noasman971", "https://www.linkedin.com/in/noah-kichenassamy/"]}
                     />
-                    <Bloc title={"COMPETENCES"} skills frontend={frontend} backend={backend} />
+                    <Bloc title={"COMPETENCES"} skills frontend={frontend} backend={backend} tools={["Trello", "Git"]} />
                     <Bloc title={"SOFT SKILLS"} description={["Curieux", "Esprit d'équipe", "Méthodologie agile"]}/>
                     <Bloc title={"CENTRES D'INTERET"} description={["Lecture: Manga", "Sport: Basket", "Voyager"]}/>
                     <Bloc title={"Langues"} description={["Anglais: B2 intermédiaire", "Espagnol: B1 Scolaire", "Japonais: B1 Scolaire"]}/>

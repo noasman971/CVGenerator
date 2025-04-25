@@ -10,9 +10,9 @@ interface Props {
 export default function PrincipalPage({ title, bloc2Content }: Props) {
     return (
         <div className="p-4 sm:ml-64 h-screen w-[calc(100%-256px)]">
-            <TitleHeader title={title} />
+            <h1 className="text-3xl font-bold">{title}</h1>
             <h2 className="text-2xl font-bold">À la recherche d'une alternance de 2 ans</h2>
-            <h3 className="text-xl pb-4">
+            <h3 className="text-base pb-2">
                 Avec un rythme de 3 semaines entreprise / 2 semaines école
             </h3>
 
@@ -51,14 +51,5 @@ export default function PrincipalPage({ title, bloc2Content }: Props) {
                 />
             </Bloc2>
         </div>
-    );
-}
-
-function TitleHeader({ title }: { title: string }) {
-    return (
-        <>
-            <h1 className="text-3xl font-bold">{title}</h1>
-            <hr className="w-auto h-10 border-0 my-1 bg-bigTitle" />
-        </>
     );
 }

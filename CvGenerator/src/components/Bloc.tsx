@@ -9,9 +9,10 @@ interface blocProps {
     backend?: string[];
     icon?: IconDefinition[];
     link?: (string | null)[];
+    tools?: string[];
 }
 
-export default function bloc({title, description, skills = false, frontend, backend, icon, link}: blocProps)
+export default function bloc({title, description, skills = false, frontend, backend, icon, link, tools}: blocProps)
 {
     return(
         <div className="flex flex-col">
@@ -39,6 +40,15 @@ export default function bloc({title, description, skills = false, frontend, back
                                         {item}
                                     </li>
                                 ))}
+                            </ul>
+                            <h3>Outils</h3>
+                            <ul className={"list-disc list-inside grid grid-cols-2 gap-x-1.5"}>
+                                {tools && tools.map((item, index) => (
+                                    <li key={index}>
+                                        {item}
+                                    </li>
+                                ))}
+
                             </ul>
                         </div>
 
