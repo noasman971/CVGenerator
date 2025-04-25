@@ -2,9 +2,12 @@ import { Bloc2, Bloc2Content } from "./Bloc2.tsx";
 
 interface Props {
     title: string;
+    bloc2Content?: React.ReactNode[];
 }
 
-export default function PrincipalPage({ title }: Props) {
+
+
+export default function PrincipalPage({ title, bloc2Content }: Props) {
     return (
         <div className="p-4 sm:ml-64 h-screen w-[calc(100%-256px)]">
             <TitleHeader title={title} />
@@ -28,20 +31,10 @@ export default function PrincipalPage({ title }: Props) {
             </Bloc2>
 
             <Bloc2 title={"PROJETS (VOIR PLUS SUR GITHUB)"}>
-                <Bloc2Content
-                    title={"Application multiplateforme"}
-                    languages={"React Native, Node.js, Express, MongoDB"}
-                    date={"2023"}
-                    description={[
-                        "Application de gestion de tâches avec authentification et notifications en temps réel.",
-                    ]}
-                />
-                <Bloc2Content
-                    title={"Site web e-commerce"}
-                    languages={"React, Node.js, Express, MongoDB"}
-                    date={"2023 - 2024"}
-                    description={["Site de vente de vêtements avec panier et paiement en ligne."]}
-                />
+                {bloc2Content?.map((content, index) => (
+                    <div key={index}>{content}</div>
+                ))}
+
             </Bloc2>
 
             <Bloc2 title={"ÉTUDES"}>
