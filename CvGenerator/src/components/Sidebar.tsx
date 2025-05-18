@@ -17,7 +17,7 @@ export default function Sidebar({ frontend, backend }: SidebarProps)
 
     return (
         <>
-            <aside className="fixed top-0 left-0 z-40 w-64 h-screen bg-side">
+            <aside className="fixed top-0 left-0 z-40 w-64 h-screen bg-side ml-2">
             <Image src={profile} alt="profile" />
                 <div className={"p-2"}>
                     <h2>

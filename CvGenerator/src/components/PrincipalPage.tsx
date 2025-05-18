@@ -22,10 +22,9 @@ export default function PrincipalPage({ title, bloc2Content }: Props) {
                     languages={"Sorel Energies - Sarcelles (95)"}
                     date={"avril 2025 - juin 2025 (8 semaines)"}
                     description={[
-                        "Analyse du site existant développé en no-code",
-                        "Reconstruction complète en JavaScript avec React.",
-                        "Mise en place d'un design responsive",
-                        "Optimisation des performances et du référencement (SEO)",
+                        "Refonte d’un outil interne (Airtable), conçu en no-code.",
+                        "Reconstruction complète en Typescript avec React (frontend), Express et PostgreSQL(backend).",
+                        "Conception d’une interface dynamique et responsive ",
                     ]}
                 />
             </Bloc2>

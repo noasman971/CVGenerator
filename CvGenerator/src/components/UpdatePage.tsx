@@ -3,7 +3,7 @@ import {Bloc2Content} from "./Bloc2.tsx";
 
 interface Props {
     title: string;
-    onChange: (checked: boolean) => void;
+        onChange: (checked: boolean) => void;
 }
 
 function Checkbox({ title, onChange }: Props) {
@@ -81,20 +81,26 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
 
 
     const frontEndLangs = ["Javascript", "VueJs", "React", "Angular", "Svelte", "TypeScript"];
-    const backEndLangs = ["PHP", "Python", "Java", "Ruby", "JavaScript", "Laravel", "Node.js", "Django", "Spring", "Express", "Flask", "Ruby-on-Rails", "ASP.NET"];
+    const backEndLangs = ["PHP", "Python", "Java", "Ruby", "JavaScript", "Laravel", "Node.js", "Django", "Spring", "Express", "Flask", "Ruby-on-Rails", "ASP.NET",
+    "Symfony", "C#", "MySQL", "PostgreSQL", "Node.js", "Next.js", "Nest.js", "Spring Boot"];
     const titleJob = [
         "Développeur Front-end", "Développeur Back-end", "Développeur Fullstack",
         "Développeur Web", "Développeur Mobile", "Développeur d'Applications",
         "Développeur de Logiciels", "Développeur Java", "Développeur Python",
-        "Développeur PHP", "Développeur informatiques", "Développeur Javascript",
-        "Développeur C#", "Développeur Unity"
+        "Développeur PHP", "Développeur informatique", "Développeur Javascript",
+        "Développeur C#", "Développeur Unity", "Développeur PHP Python", "Développeur Web Fullstack",
+        "Développeur Python React", "Développeur Java Fullstack", "Développeur d'Applications Web",
+        "Développeur Java Backend", "Développeur JavaScript Frontend", "Développeur Web PHP",
+        "Développeur JS Fullstack", "Développeur PHP Laravel", "Développeur applicatif",
+        "Développeur TypeScript", "Développeur Web Mobile", "Développeur Web React",
+
     ];
 
 
     const projects = [
         <Bloc2Content
             title={"Coding Tool Box"}
-            languages={"Laravel, Tailwind, MySQL"}
+            languages={"Laravel(PHP), Tailwind, MySQL"}
             date={"24 mars 2025 – 4 avril 2025"}
             description={[
                 "Projet réalisé seul.",
@@ -104,7 +110,7 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
         />,
         <Bloc2Content
             title={"Test technique Symfony"}
-            languages={"Symfony, Tailwind, MySQL"}
+            languages={"Symfony(PHP), Tailwind, MySQL"}
             date={"28 février 2025 – 4 mars 2025"}
             description={[
                 "Projet réalisé seul.",
@@ -114,7 +120,7 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
         />,
         <Bloc2Content
             title={"Site de prise de rendez-vous"}
-            languages={"Laravel, Bootstrap, MySQL"}
+            languages={"Laravel(PHP), Bootstrap, MySQL"}
             date={"17 février 2025 – 21 février 2025"}
             description={[
                 "Projet réalisé en équipe de 3 avec méthodologie agile.",
@@ -129,7 +135,7 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
             description={[
                 "Projet réalisé seul.",
                 "Développement d’une application de streaming musical inspirée de Spotify.",
-                "Fonctionnalités : gestion des playlists, lecture de musique."
+                "Fonctionnalités : gestion des playlists, authentification utilisation de l'API de Spotify pour afficher les artistes ."
             ]}
         />,
         <Bloc2Content
@@ -158,6 +164,15 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
             description={[
                 "Projet réalisé en équipe de 4 avec méthodologie agile.",
                 "Création d’un jeu interactif de démineur en terminal."
+            ]}
+        />,
+        <Bloc2Content
+            title={"Générateur de CV"}
+            languages={"React(Typescript), Tailwind CSS"}
+            date={"23 avril 2025 – 25 avril 2025"}
+            description={[
+                "Projet réalisé seul.",
+                "Développement d’une application web permettant de générer un CV personnalisé à partir d’un formulaire dynamique.",
             ]}
         />
     ];
