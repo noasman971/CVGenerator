@@ -22,24 +22,24 @@ export default function PrincipalPage({ title, bloc2Content }: Props) {
                     languages={"Sorel Energies - Sarcelles (95)"}
                     date={"avril 2025 - juin 2025 (8 semaines)"}
                     description={[
-                        "Refonte d’un outil interne (Airtable), conçu en no-code.",
-                        "Reconstruction complète en Typescript avec React (frontend), Express et PostgreSQL(backend).",
-                        "Conception d’une interface dynamique et responsive ",
+                        "Refonte d'un outil interne conçu en no-code sous Airtable, afin de gagner en flexibilité et en maîtrise technique.",
+                        "Reconstruction complète de l'application, de la base de données à une interface dynamique et responsive.",
+                        "Version fonctionnelle complète livrée en 8 semaines.",
+                        "Outils : TypeScript, React, Express, PostgreSQL.",
                     ]}
                 />
-
+            
                 <Bloc2Content
                     title={"Développeur Fullstack - Alternance"}
                     languages={"NeoLeasy - Colombes (92)"}
-                    date={"septembre 2025 - août 2027(2 ans)"}
+                    date={"septembre 2025 - août 2027 (2 ans)"}
                     description={[
-                        "Développement web et conception d'applications métiers sur mesure pour répondre aux besoins internes de NeoLeasy.",
-                        "Développement backend et frontend en PHP et gestion des données avec MySQL.",
-                        "Intégration et exploitation d'API tierces : Stripe, DocuSign, INPI et Pappers.",
+                        "Conception d'applications métiers sur mesure pour automatiser les processus internes de NeoLeasy.",
+                        "Développement backend et frontend, gestion des données et intégration d'API tierces (paiement, signature électronique, données d'entreprises).",
+                        "Plus de 6 000 dossiers traités via les outils développés.",
+                        "Outils : PHP, MySQL, API Stripe, DocuSign, INPI, Pappers.",
                     ]}
                 />
-
-                
             </Bloc2>
 
             <Bloc2 title={"PROJETS (VOIR PLUS SUR GITHUB)"}>
