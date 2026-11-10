@@ -93,6 +93,7 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
         "Développeur Java Backend", "Développeur JavaScript Frontend", "Développeur Web PHP",
         "Développeur JS Fullstack", "Développeur PHP Laravel", "Développeur applicatif",
         "Développeur TypeScript", "Développeur Web Mobile", "Développeur Web React",
+        "Développeur d'application"
 
     ];
 
@@ -174,7 +175,19 @@ export default function UpdatePage({ setTitle, frontend, backend, setFrontend, s
                 "Projet réalisé seul.",
                 "Développement d’une application web permettant de générer un CV personnalisé à partir d’un formulaire dynamique.",
             ]}
-        />
+      />,
+      <Bloc2Content
+          title={"Gamio"}
+          languages={"NextJs, PostgresSQL"}
+          date={"4 août 2025 – aujourd'hui"}
+          description={[
+              "Conception et développement de Gamio.fr, une plateforme web de jeux de cartes en ligne.",
+              "Développement d'une interface interactive permettant de jouer seul contre des robots ou entre amis.",
+              "Conception du backend et gestion des données avec PostgreSQL.",
+              "Développement de fonctionnalités multijoueurs et de systèmes de gestion de parties.",
+              "Utilisation de Claude Code pour accompagner et accélérer le développement.",
+          ]}
+    />,
     ];
 
 

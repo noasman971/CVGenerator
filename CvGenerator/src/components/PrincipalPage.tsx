@@ -27,6 +27,19 @@ export default function PrincipalPage({ title, bloc2Content }: Props) {
                         "Conception d’une interface dynamique et responsive ",
                     ]}
                 />
+
+                <Bloc2Content
+                    title={"Développeur Fullstack - Alternance"}
+                    languages={"NeoLeasy - Colombes (92)"}
+                    date={"septembre 2025 - août 2027(2 ans)"}
+                    description={[
+                        "Développement web et conception d'applications métiers sur mesure pour répondre aux besoins internes de NeoLeasy.",
+                        "Développement backend et frontend en PHP et gestion des données avec MySQL.",
+                        "Intégration et exploitation d'API tierces : Stripe, DocuSign, INPI et Pappers.",
+                    ]}
+                />
+
+                
             </Bloc2>
 
             <Bloc2 title={"PROJETS (VOIR PLUS SUR GITHUB)"}>
